@@ -10,7 +10,7 @@
   include "./db/database.php";
   include "./models/task.php";
 
-  if(isset($_GET['id'])){
+  if(isset($_GET['id'])){ //Verifica se o id da tarefa foi setado no paramentro da url
     $db = new DataBase();
     $task = new Task($db->connect());
     $task->id = $_GET['id'];

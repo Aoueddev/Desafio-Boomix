@@ -1,4 +1,5 @@
 <?php
+//Modelo que ira persistir os dados para cada requisicao no banco de dados
 class Task{
   public $id;
   public $title;
@@ -6,6 +7,7 @@ class Task{
   public $create_at;
   public $updated_at;
 
+  //Atributos para paginacao
   public $offset = 0; 
   public $limit = 5; 
 
