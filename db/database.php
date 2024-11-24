@@ -8,7 +8,6 @@ class DataBase{
 
   function __construct(){
     // Dados para conexão com banco de dados
-
     $this->dbname = "todolist";
     $this->host = "localhost";
     $this->port = "3360";

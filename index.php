@@ -13,8 +13,9 @@ include "./models/task.php";
 
 $db = new DataBase();
 $tasks = new Task($db->connect());
-$tasks->offset = isset($_GET['page']) ? $_GET['page']*5 : 0 || 0;
-$tasks->limit = 5;
+//Logica para paginacao
+$tasks->offset = isset($_GET['page']) ? $_GET['page']*5 : 0 || 0; //Pagina
+$tasks->limit = 5; //Quantidade de tarefas que serao exibidas por pagina
 $tasks = $tasks->list();
 ?>
 
